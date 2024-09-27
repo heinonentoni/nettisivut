@@ -1,0 +1,278 @@
+/* LAYOUT.SCSS */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba($color-black, 0.6),
+      rgba($color-black, 0.3)
+    ),
+    url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .brand {
+    @include centering(15%);
+    display: flex;
+    align-items: center;
+  }
+
+  &-banner {
+    color: $color-white;
+    @include centering(50%);
+  }
+}
+
+.about-us {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1140px) {
+      height: auto;
+      padding: 50px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+      flex-direction: column;
+  }
+
+  &-left {
+      width: 40%;
+      position: relative;
+
+      @media screen and (max-width: 768px) {
+          width: 100%;
+      }
+
+      img {
+          width: 100%;
+      }
+  }
+
+  &-right {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 100px;
+      box-sizing: border-box;
+
+      @media screen and (max-width: 768px) {
+          width: 100%;
+      }
+
+      @media screen and (max-width: 540px) {
+          padding: 0 50px;
+      }
+
+      .stars {
+          margin: 30px 0;
+      }
+
+      .star {
+          font-size: 15px;
+          margin-left: 10px;    
+          background: linear-gradient(#ff9100, #def704 25%, green 50%, #e90404 75%);
+          -webkit-background-clip: text;
+          color: transparent;
+          font-size: 24px;
+      }
+
+      .description {
+          font-family: $font-Roboto;
+          font-size: 20px;
+          font-style: italic;
+          color: $color-secondary;
+          text-align: justify;
+
+          &::first-letter {
+              padding-left: 10px;
+          }
+      }
+  }
+}
+
+.gallery {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer {
+  padding: 70px 10px;
+  @include flexLayout;
+  flex-direction: column;
+
+  &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 70px;
+  }
+
+  &-copyright-paragraph {
+      font-family: $font-Roboto;
+      font-size: 18px;
+      color: $color-secondary;
+      @include textStyles(none);
+
+      @media screen and (max-width: 768px) {
+          font-size: 16px;
+      }
+  }
+}
+
+.social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  &-item {
+      list-style: none;
+  }
+
+  &-link {
+      text-decoration: none;
+      font-size: 50px;
+      color: $color-secondary;
+      transition: color 0.5s;
+
+      &:hover {
+          color: $color-primary
+      }
+  }
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+    left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+    right: 0;
+}
+
+.checkbox:checked ~ .valikko .menu {
+    transform: rotate(90deg);
+}
+
+.checkbox:checked ~ .valikko .viiva1 {
+    transform: rotate(360deg);
+}
+
+.checkbox:checked ~ .valikko .viiva2 {
+    transform: rotate(360deg)
+}
+
+.checkbox:checked ~ .valikko .viiva3 {
+    transform: rotate(360deg);
+} 
+
+.navbar {
+    position: relative;
+    z-index: 25;
+    
+        &-navigation {
+            display: flex;
+    
+            &-left {
+                width: 50vw;
+                height: 100vh;
+                background-color: $color-dark;
+                position: fixed;
+                left: -50vw;
+                transition: left 0.7s ease-in-out;
+    
+                @media screen and (max-width: 540px) {
+                    width: 0vw;
+                }
+    
+                .left-img {
+                    width: 50%;
+                    position: absolute;
+                    border-radius: 15px;
+                    box-shadow: 10px 10px 20px rgba(darkgrey, 0.3);
+                    opacity: 0.7;
+    
+                    @media screen and (max-width: 1140px) {
+                        width: 60%;
+                    }
+    
+                    @media screen and (max-width: 800px) {
+                        width: 90%;
+                    }
+                }
+    
+                .left-img-1 {
+                    top: 15%;
+                    left: 15%;
+    
+                    @media screen and (max-width: 768px) {
+                        left: 5%;
+                    }
+                }
+    
+                .left-img-2 {
+                    top: 35%;
+                    left: 25%;
+    
+                    @media screen and (max-width: 768px) {
+                        left: 5%;
+                    }
+                }
+    
+                .left-img-3 {
+                    top: 55%;
+                    left: 35%;
+                    opacity: 0.6;
+    
+                    @media screen and (max-width: 768px) {
+                        left: 5%;
+                    }
+                }
+            }
+    
+            &-right {
+                width: 50vw;
+                height: 100vh;
+                background-color: darken($color-dark, 5%);
+                position: fixed;
+                right: -50vw;
+                @include flexLayout;
+                transition: right 0.7s ease-in-out;
+    
+                @media screen and (max-width: 540px) {
+                    width: 100vw;
+                    right: -100vw;
+                }
+            }
+    
+            .nav-list {
+                &-item {
+                    list-style: none;
+                }
+    
+                &-link {
+                    font-family: $font-Marck;
+                    font-size: 50px;
+                    @include textStyles(none);
+                    color: $color-secondary;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+    
+                    &:hover {
+                        color: $color-primary;
+
+                    }
+                }
+            }
+        }
+    }
