@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sivut</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portfolio</div>
+        <button class="hamburger">&#9776;</button>
+        <div class="menu">
+          <a href="index.html">Etusivu</a>
+          <a href="projektit.html">Projektit</a>
+          <a href="tietoa.html">Tietoa minusta</a>
+          <a href="yhteyttä.html">Ota yhteyttä</a>
+        </div>
+      </nav>
+
+      <div class="button2">
+        <div class="overlay-text4"></div>
+        <a href="https://niisku.lab.fi/~x115705/AT00BT76/h3/index.html">
+          <span class="overlay-text4">Paina siirtyäksesi!</span>
+          <h3>Horticulture</h3>
+        </a>
+      </div>
+      <div class="button3">
+        <div class="overlay-text5"></div>
+        <a href="https://niisku.lab.fi/~x115705/AT00BT76/h6/index.html">
+          <span class="overlay-text5">Paina siirtyäksesi!</span>
+          <h3>Liikkuvakuva</h3>
+        </a>
+      </div>
+      <div class="button4">
+        <div class="overlay-text6"></div>
+        <a href="https://niisku.lab.fi/~x115705/AT00BT76/h5/index.html">
+          <span class="overlay-text6">Paina siirtyäksesi!</span>
+          <h3>Pleasantville</h3>
+        </a>
+      </div>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        hamburger.addEventListener("click", function () {
+          menu.classList.toggle("menu-active");
+          console.log("Hamburger clicked, menu should toggle.");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portfolio</div>
+        <button class="hamburger">&#9776;</button>
+        <div class="menu">
+          <a href="index.html">Etusivu</a>
+          <a href="projektit.html">Projektit</a>
+          <a href="tietoa.html">Tietoa minusta</a>
+          <a href="yhteyttä.html">Ota yhteyttä</a>
+        </div>
+      </nav>
+      <section class="h-text">
+        <span>Tälle sivulle on koottu minun tekemiäni töitä.</span>
+        <h1>TERVETULOA</h1>
+        <br />
+        <a href="tietoa.html">Kuka olen?</a>
+      </section>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        hamburger.addEventListener("click", function () {
+          menu.classList.toggle("menu-active");
+          console.log("Hamburger clicked, menu should toggle.");
+        });
+      });
+    </script>
+  </body>
+</html>

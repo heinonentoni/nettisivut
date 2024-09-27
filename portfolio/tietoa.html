@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tietoa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portfolio</div>
+        <button class="hamburger">&#9776;</button>
+        <div class="menu">
+          <a href="index.html">Etusivu</a>
+          <a href="projektit.html">Projektit</a>
+          <a href="tietoa.html">Tietoa minusta</a>
+          <a href="yhteyttä.html">Ota yhteyttä</a>
+        </div>
+      </nav>
+      <div class="minustalaatikko"></div>
+      <section class="tietoa">
+        <h1>Kuka olen?</h1>
+        <p>
+          Olen Toni Heinonen,tieto- ja viestintätekniikan insinööriopiskelija
+          LAB-ammattikorkeakoulusta. Olen työskennellyt monilla eri aloilla,
+          kuten mediassa, kuljetusalalla ja rakennusalalla, mikä on antanut
+          minulle monipuolisen näkökulman ja kyvyn soveltaa teknistä tietämystä
+          käytännön tilanteissa. Omaan vahvan työmoraalin, tehokkaan
+          työskentelytavan ja olen erityisen hyvä ongelmien ratkaisussa. Tällä
+          hetkellä syvennän osaamistani ohjelmoinnissa ja tietoturvassa, ja
+          uskon, että näiden taitojen soveltaminen työelämässä auttaa minua
+          kehittymään alalla.
+        </p>
+      </section>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        hamburger.addEventListener("click", function () {
+          menu.classList.toggle("menu-active");
+          console.log("Hamburger clicked, menu should toggle.");
+        });
+      });
+    </script>
+  </body>
+</html>

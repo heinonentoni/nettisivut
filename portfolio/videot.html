@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Portfolio</div>
+        <button class="hamburger">&#9776;</button>
+        <div class="menu">
+          <a href="index.html">Etusivu</a>
+          <a href="projektit.html">Projektit</a>
+          <a href="tietoa.html">Tietoa minusta</a>
+          <a href="yhteyttä.html">Ota yhteyttä</a>
+        </div>
+      </nav>
+      <video width="640" height="360" controls class="video">
+        <source src="images/video.mp4" class="video/mp4" />
+      </video>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+
+        hamburger.addEventListener("click", function () {
+          menu.classList.toggle("menu-active");
+          console.log("Hamburger clicked, menu should toggle.");
+        });
+      });
+    </script>
+  </body>
+</html>
