@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peli</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="tausta">
+      <div class="container">
+        <div class="container-inner">
+          <img src="" alt="Location" id="img" />
+          <div class="nappulat">
+            <input
+              id="input"
+              class="input"
+              type="text"
+              placeholder="Anna komento"
+            />
+            <button>Vastaa</button>
+            <p class="output" id="output"></p>
+          </div>
+          <div class="borderbox"></div>
+          <div class="borderbox2">
+            <h1>> OHJEET <</h1>
+            <ul>
+              <li>Tavoitteesi tässä pelissä:</li>
+              <li>Löytää kivi joka täytyy tiputtaa kaivoon.</li>
+              <li>Päästä mökille lämpimään soittamaan huilua.</li>
+              <li>Lohikäärmeen hampaan saaminen urhean miekkailun jälkeen.</li>
+              <li>Hammas täytyy toimittaa metsään.</li>
+              <p>Mukavia pelihetkiä!</p>
+            </ul>
+          </div>
+          <div class="borderbox3">
+            <h1>> KOMENNOT <</h1>
+            <ul>
+              <li>Liikkuminen: ylös, alas, oikea, vasen</li>
+              <li>Poimi : poimi + esine / esim poimi kivi</li>
+              <li>Pudota : pudota + esine / esim pudota kivi</li>
+              <li>Käytä : käytä + esine / esim käytä kivi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="Kartta">
+          <h1>> KARTTA <</h1>
+          <table id="mapTable">
+            <tr>
+              <td>Vanha torni</td>
+              <td>Syvä kaivo</td>
+              <td>Aurinkoinen metsä</td>
+            </tr>
+            <tr>
+              <td>Lohikäärme</td>
+              <td>Kapea metsäpolku</td>
+              <td>Vanha portti</td>
+            </tr>
+            <tr>
+              <td>Joen ranta</td>
+              <td>Vanha puupenkki</td>
+              <td>Kaukainen mökki</td>
+            </tr>
+          </table>
+          <button class="info" id="info">Hätä?</button>
+          <button class="button" id="button1">Aloita uudelleen!</button>
+          <script src="js/script.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

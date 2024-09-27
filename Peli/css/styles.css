@@ -1,0 +1,201 @@
+.output {
+  font-weight: bold;
+}
+
+.tausta {
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-color: rgb(0, 1, 8);
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/tausta.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.container-inner {
+  width: 340px;
+}
+p {
+  color: #fff;
+}
+img {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  width: 480px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.borderbox {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/tausta.jpg);
+  background-position: left;
+  background-size: cover;
+  position: absolute;
+  background-color: black;
+  left: -315px;
+  top: 1px;
+  border: 1px solid black;
+  width: 305px;
+  height: 498px;
+  border-radius: 20px 0 0 20px;
+}
+
+.nappulat {
+  position: absolute;
+  text-align: center;
+  top: 370px;
+  left: 130px;
+}
+
+#mapTable {
+  position: absolute;
+  width: 100px;
+  left: -308px;
+  top: 60px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#mapTable td {
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+}
+
+#mapTable tr:first-child td {
+  border-top: none; /* Poista ensimmäisen rivin yläreuna */
+}
+
+#mapTable tr:last-child td {
+  border-bottom: none; /* Poista viimeisen rivin alareuna */
+}
+
+#mapTable td:first-child {
+  border-left: none; /* Poista ensimmäisen sarakkeen vasen reuna */
+}
+
+#mapTable td:last-child {
+  border-right: none; /* Poista viimeisen sarakkeen oikea reuna */
+}
+
+.Kartta h1 {
+  position: absolute;
+  left: -232px;
+  top: 0px;
+  color: white;
+  font-size: x-large;
+}
+
+.borderbox2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/tausta.jpg);
+  background-position: right;
+  background-size: cover;
+  position: absolute;
+  background-color: black;
+  right: -315px;
+  top: 1px;
+  border: 1px solid black;
+  width: 305px;
+  height: 498px;
+  border-radius: 0 20px 20px 0;
+}
+
+.borderbox2 h1 {
+  position: absolute;
+  right: 85px;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+.borderbox2 p {
+  position: absolute;
+  width: 280px;
+  height: 20px;
+  top: 370px;
+  right: 5px;
+  color: white;
+}
+
+.borderbox2 ul {
+  list-style-type: circle;
+  padding: 0;
+  position: absolute;
+  left: 25px;
+  width: 280px;
+  height: 500px;
+  top: 40px;
+  color: white;
+}
+
+.borderbox2 li {
+  margin-bottom: 10px;
+}
+
+.borderbox3 h1 {
+  position: absolute;
+  top: 240px;
+  right: -260px;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+.borderbox3 li {
+  margin-bottom: 10px;
+}
+.borderbox3 ul {
+  list-style-type: circle;
+  padding: 0;
+  position: absolute;
+  right: -314px;
+  width: 280px;
+  height: 500px;
+  top: 290px;
+  color: white;
+}
+
+.active {
+  color: gold;
+}
+
+.info {
+  position: absolute;
+  background-color: gray;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 15px;
+  left: -300px;
+  top: 440px;
+}
+
+.button {
+  position: absolute;
+  background-color: gray;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 15px;
+  left: -200px;
+  top: 440px;
+}
