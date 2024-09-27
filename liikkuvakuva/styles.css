@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: lightblue;
+  padding-bottom: 120px;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  padding: 120px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+/* Auto */
+#auto {
+  position: absolute;
+  bottom: 220px;
+  width: 220px;
+  animation: liikuAuto 20s linear forwards;
+}
+
+/* Animaatio */
+@keyframes liikuAuto {
+  0% {
+    left: -80%;
+    opacity: 1;
+  }
+  95% {
+    left: 100%;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Aurinko */
+#aurinko {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 130px;
+  animation: liikuAurinko 28s linear forwards;
+}
+
+/* Animaatio */
+@keyframes liikuAurinko {
+  0% {
+    bottom: 0;
+    left: -4%;
+  }
+  25% {
+    bottom: 90%;
+    left: 15%;
+  }
+  75% {
+    bottom: 90%;
+    left: 85%;
+  }
+  100% {
+    bottom: 0;
+    left: 96%;
+  }
+}
+
+/* Cloud */
+#cloud {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 190px;
+  animation: liikuCloud 20s linear forwards;
+}
+
+/* Animaatio */
+@keyframes liikuCloud {
+  0% {
+    top: -4%;
+    right: -30%;
+  }
+  100% {
+    top: -4%;
+    right: 100%;
+  }
+}
+
+/* Pilvi */
+#pilvi {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  animation: liikuPilvi 23s linear forwards;
+}
+
+/* Animaatio */
+@keyframes liikuPilvi {
+  0% {
+    top: 3%;
+    right: -65%;
+  }
+  100% {
+    top: 3%;
+    right: 100%;
+  }
+}
+
+/* Pilvi2 */
+#pilvi2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  animation: liikuPilvi2 24s linear forwards;
+}
+
+/* Animaatio */
+@keyframes liikuPilvi2 {
+  0% {
+    top: -1%;
+    right: -65%;
+  }
+  100% {
+    top: -1%;
+    right: 100%;
+  }
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 100;
+  animation-name: overlay;
+  animation-duration: 32s;
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
