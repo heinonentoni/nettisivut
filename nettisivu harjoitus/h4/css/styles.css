@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+body {
+  font-size: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: #1b1a52;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+#container {
+  width: 100%;
+  background: #ffffff;
+  font-size: 80%;
+  text-align: left;
+}
+#header {
+  background-color: #ffffff;
+  background-image: url(../images/logo_background.gif);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 0;
+  border-bottom: 1px solid #9290bf;
+}
+#header img {
+  margin: 30px 0 31px 40px;
+}
+
+#header ul {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #ffad00;
+  background-image: url(../images/nav_bar_back.jpg);
+  background-repeat: repeat-x;
+  background-image: linear-gradient(#ffcc08, #ffad00);
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #575691;
+}
+
+#header li {
+  font-size: 110%;
+  float: left;
+  text-align: center;
+}
+
+#header li#living {
+  padding-left: 28px;
+}
+
+#header li a {
+  float: left;
+  display: block;
+  padding: 8px 12px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#header li a:hover,
+#header li a:active,
+#header li a:focus {
+  color: #1b1a52;
+}
+
+.living #living a,
+.business #business a,
+.chamber #chamber a {
+  color: white;
+}
+
+#mainWrap {
+  background-color: #403e8a;
+  background-image: linear-gradient(#6e6ea4, #403e8a 258px);
+}
+
+#sidebar1 {
+  float: left;
+  width: 20%;
+  padding: 15px 0;
+  background: url(../images/side1_back.jpg) no-repeat top right;
+  min-height: 200px;
+}
+#sidebar2 {
+  float: right;
+  width: 22%;
+  padding: 15px 0;
+  color: orange;
+  font-size: large;
+  background: url(../images/side2_back.jpg) no-repeat top right;
+  min-height: 145px;
+}
+#sidebar1 ul {
+  color: #575691;
+  padding-left: 40px;
+  font-size: medium;
+}
+
+#sidebar1 li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 5px 5px 5px;
+}
+
+#sidebar1 li a:hover,
+#sidebar1 li a:active,
+#sidebar1 li a:focus {
+  color: orange;
+}
+
+.living #living a,
+.business #business a,
+.chamber #chamber a {
+  color: white;
+}
+
+#sidebar1 h3 {
+  color: orange;
+  padding-left: 50px;
+  font: larger;
+}
+
+#sidebar2 p {
+  color: white;
+  padding-right: 50px;
+}
+
+#sidebar2 p.img {
+  padding-top: 20px;
+  text-align: center;
+  height: 120px;
+}
+
+#sidebar2 h3 {
+  margin-left: 0px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#mainContent {
+  margin: 0 24% 0 23.5%;
+  padding-top: 10px;
+  color: orange;
+  font-size: large;
+  background: url(../images/content_back.jpg) no-repeat top right;
+  min-height: 180px;
+  padding-right: 100px;
+}
+
+#mainContent p {
+  color: white;
+  line-height: 1.5;
+}
+
+#mainContent li a {
+  color: white;
+  text-decoration: none;
+}
+
+#mainContent li a:hover,
+#mainContent li a:active,
+#mainContent li a:focus {
+  color: orange;
+}
+
+#footer {
+  padding: 0 30px 0 40px;
+  border-top: 10px solid #2d2d70;
+  background-color: #1b1a52;
+}
+#footer p {
+  margin: 0;
+  padding: 10px 0;
+  color: #5c5a99;
+  width: 59%;
+}
+
+#footer ul {
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  width: 39%;
+  list-style: none;
+}
+#footer li {
+  float: right;
+}
+#footer li a {
+  display: block;
+  padding: 10px;
+  color: #5c5a99;
+  text-decoration: none;
+}
+
+#footer li a:hover,
+#footer li a:active,
+#footer li a:focus {
+  color: orange;
+}
+
+.fltrt {
+  float: right;
+  margin-left: 8px;
+}
+.fltlft {
+  float: left;
+  margin-right: 8px;
+}
+.clearfloat {
+  clear: both;
+  height: 0;
+  font-size: 1px;
+  line-height: 0px;
+}
